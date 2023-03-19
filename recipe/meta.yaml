@@ -1,5 +1,5 @@
 {% set name = "antarctic-plots" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/antarctic_plots-{{ version }}.tar.gz
-  sha256: 42bb6236e7d3b8dc07bc84450b05073791fe8a161362cc8226d8f83cd9f9d8a3
+  sha256: 33ccbd4f34316a2f53795e19032679d92d9a8c640190a97386a265c5d69bf399
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.8
     - pandas
+    - openpyxl
     - pooch
     - verde
     - xarray
@@ -47,7 +48,6 @@ test:
     - pip
 
 about:
-  home: https://github.com/mdtanker/antarctic_plots
   summary: Functions to automate Antarctic data visualization
   license: MIT
   license_file: LICENSE
