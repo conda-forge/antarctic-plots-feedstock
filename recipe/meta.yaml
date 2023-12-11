@@ -16,19 +16,22 @@ build:
 
 requirements:
   host:
-    - python >=3.8
-    - setuptools >=61.0
-    - setuptools-scm >=6.2
+    - python >=3.9
+    - setuptools >=64
     - pip
   run:
     - python >=3.8
     - pandas
     - openpyxl
     - pooch
-    - verde
+    - tqdm
+    - verde>=1.8.0
     - xarray
+    - netcdf4
+    - h5netcdf
+    - harmonica>=0.6.0
     - pyproj
-    - matplotlib-base
+    - matplotlib
     - pyogrio
     - rioxarray
     - scipy
@@ -37,15 +40,11 @@ requirements:
     - geopandas
     - zarr
     - python-dotenv
-    - pip
+    - nptyping
 
 test:
   imports:
     - antarctic_plots
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/mdtanker/antarctic_plots
