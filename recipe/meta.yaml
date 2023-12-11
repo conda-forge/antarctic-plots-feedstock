@@ -25,10 +25,10 @@ requirements:
     - openpyxl
     - pooch
     - tqdm
-    - verde>=1.8.0
+    - verde >=1.8.0
     - xarray
     - pyproj
-    - matplotlib
+    - matplotlib-base
     - pyogrio
     - rioxarray
     - scipy
