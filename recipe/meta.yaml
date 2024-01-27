@@ -20,24 +20,7 @@ requirements:
     - setuptools >=64
     - pip
   run:
-    - python >=3.8
-    - pandas
-    - openpyxl
-    - pooch
-    - tqdm
-    - verde >=1.8.0
-    - xarray
-    - pyproj
-    - matplotlib-base
-    - pyogrio
-    - rioxarray
-    - scipy
-    - numpy
-    - pygmt
-    - geopandas
-    - zarr
-    - python-dotenv
-    - nptyping
+    - polartoolkit
 
 test:
   imports:
