@@ -1,5 +1,5 @@
 {% set name = "antarctic-plots" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/antarctic_plots-{{ version }}.tar.gz
-  sha256: 5d56a1773c4c1ca5b27cf1caa1c95a20248fedeffb13292c9b6b21edb0b04ae2
+  sha256: 4679ce0f6ca0f21fe149db87d80ca79878d62f9d4fb21570a909e3a53c4462b5
 
 build:
   noarch: python
